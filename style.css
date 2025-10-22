@@ -1,0 +1,170 @@
+/* Import Fonts ===========================================  */
+
+@font-face {
+    font-family: 'Deutsch';
+    src : url(assets/fonts/Deutsch.woff);
+
+}
+
+@font-face {
+    font-family: 'Sans Control Regular';
+    src : url(assets/fonts/SansControlRegular.woff);
+
+}
+
+/* General Design ===========================================  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Variables  ===========================================  */
+
+/* Fonts ===========================================  */
+
+h1{
+    font-family: 'Deutsch';
+    font-size: 90px;
+    color: white;
+    opacity: 0.8;
+}
+
+h2{
+    font-family: 'Sans Control Regular';
+    color: white;
+}
+
+h3{
+    font-family: 'Sans Control Regular';
+    color: white;
+    padding-left: 5px;
+
+}
+
+p{
+    font-family: 'Sans Control Regular';
+    color: white;
+}
+
+/* Components ===========================================  */
+
+/* Page Design ===========================================  */
+
+/* Video ------------- */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+/* Section 1 -------------
+#section1{
+    min-height: 100vh;
+    min-height: 112dvh;
+    min-width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+*/
+#section1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* espace entre haut, milieu, bas */
+  
+}
+
+
+/* Ligne du haut et du bas */
+#menue {
+  display: flex;
+  justify-self: start;
+  padding: 20px;
+}
+
+/* Titre centré */
+#titre {
+  display: flex;
+  justify-content: center;
+}
+
+/* Pour que le menu reste à gauche et les tags à droite */
+
+
+
+
+#tag {
+  justify-content: flex-end;
+  padding: 20px;
+
+}
+
+
+
+
+
+
+/* Section 2 ----------*/
+#section2{
+    min-height: 100vh;
+    min-height: 100dvh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#window2{
+    min-height: 77vh;
+    width: 100vw;
+    background-color: rgb(235, 235, 235);
+}
+
+#texteHaut{
+  text-align: right;
+  
+}
+
+/* Section 3 ----------*/
+#section3{
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: black;
+}
+
+
+/* Section 4 ----------*/
+#section4{
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: black;   
+}
+
+
+
+
+/* Section 5 ----------*/
+#section5{
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+
+
+
+
+/* Responsive ===========================================  */
+
+/* Animations ===========================================  */
