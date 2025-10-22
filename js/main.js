@@ -32,9 +32,23 @@ gsap.to("#window2", {
 
 // Timeline --------------------------------------------
 
+
+
 let tl = gsap.timeline();
 tl.to("#list1", {duration: 1, x: -200})
   .to("#list2", {duration: 2, x: -200})
   .to("#list3", {duration: 2, x: -200})
 
 
+
+let tl = gsap.timeline({
+  ScrollTrigger:{
+    trigger:"#section2",
+    markers: true,
+    start:"top 60%",
+    end:"top 20%",
+    toggleActions:"play none reverse set",
+    scrub: 1,
+}
+});
+  
