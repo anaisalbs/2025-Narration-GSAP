@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger, Observer, ScrollToPlugin, Draggable, MotionPathPlugin);
 
-// Anim déplacement au lancement 
+// Anim déplacement au lancement  -------------------------------------
 
 gsap.from("#anim", {
   
@@ -27,7 +27,7 @@ let tl = gsap.timeline({
   }
   
 });
-  tl.from("#list1", {duration: 1, x: -200})
+  tl.from("#list1", {duration: 1, x: -200})  //https://gsap.com/docs/v3/GSAP/Timeline/
   .from("#list2", {duration: 2, x: -200})
   .from("#list3", {duration: 2, x: -200})
 
@@ -40,14 +40,22 @@ let tl = gsap.timeline({
 
 // Caroussel  section 3--------------------------------------------
 
-let tlCarousel = gsap.timeline({
-  scrollTrigger:{
-    trigger:"#section3",
-    start:"top 80%",
-    end:"bottom 20%",
-    markers: true,
-    toggleActions:'play'
-  },
-  repeat: -1
 
+
+let tlCarousel = gsap.timeline({
+  repeat: -1,
+  yoyo: true
+
+});
+
+tlCarousel.to(".photo", {
+  xPercent: 250,
+  duration: 15,
 })
+
+// Draggable section 4 -----------------------------------------------
+
+Draggable.create(".tshirt", { // Pour faire essayer les vetements au mannequin
+  bounds: "#section4",
+  inertia: true
+});
