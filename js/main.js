@@ -1,9 +1,6 @@
 gsap.registerPlugin(ScrollTrigger, Observer, ScrollToPlugin, Draggable, MotionPathPlugin);
 
-//-------------------------------------------------------------------------------
 // ---------------------------Responsive MatchMedia -----------------------------
-//-------------------------------------------------------------------------------
-
 
 let mm = gsap.matchMedia();
 
@@ -16,11 +13,9 @@ mm.add(
     let { isMobile, isDesktop } = context.conditions;
 
 
-// Anim déplacement au lancement  -------------------------------------
+// Anim déplacement section 2 au lancement  -------------------------------------
 
 gsap.from("#anim", {
-  
-
   y: isMobile ? 50 : 100, // déplacement vers le haut
   duration: isMobile ? 3 : 5,
   ease: "power2.out"
@@ -54,7 +49,7 @@ let tl = gsap.timeline({
   .from("#list6", {duration: 2, x: isMobile ? 100 : 200});
 
 
-// Caroussel  section 3--------------------------------------------
+// Caroussel continu section 3--------------------------------------------
 
 
 
