@@ -216,4 +216,94 @@ p{
 
 
 
-/* Responsive ===========================================  */
+/* Responsive ==========================================================================  */
+
+
+@media (max-width: 799px) {
+
+body {
+  overflow-x: hidden;
+}
+
+.background-video {
+  max-width: 100vw;
+}
+
+  /* ----- Section 1 --------------------------------------- */
+#section1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#mainTitle {
+  font-size: 20vw;
+  color: white;
+  opacity: 0.8;
+}
+#menue, #tag {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+}
+
+/* ----- Section 2 ------------------------------------------- */
+
+#anim {
+  display: flex;
+  flex-direction: column;
+}
+
+#texteHaut, #texteBas, .bigText {
+  text-align: center;
+  color: white;
+}
+
+.bigText {
+  font-size: 10vw;
+}
+
+#list1, #list2, #list3,#list4,#list5,#list6{
+  font-size: 4vw;
+
+}
+
+/* ----- Section 3 ------------------------------------------ */
+
+#caroussel {
+  width: 100%;
+  overflow: hidden; /* empeche le dépassement sur le coté */
+}
+
+
+.photo {
+  width: 100vw;
+  height: auto;
+}
+
+#instaId {
+  font-size: 4vw;
+  text-align: center;
+}
+
+/* ----- Section 4 ---------------------------------------------- */
+#section4 {
+  flex-direction: column;
+}
+
+#sec4Title {
+  font-size: 7vw;
+  text-align: center;
+}
+
+.tshirt {
+  width: 40vw;
+  height: auto;
+}
+
+#mannequin {
+  width: 80vw;
+  height: auto;
+}
+}
+
